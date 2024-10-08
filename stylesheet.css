@@ -1,0 +1,134 @@
+body{
+    overflow: hidden;
+}
+.section {
+    height: 100vh; /* Cada sección ocupa toda la altura de la ventana */
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    transition: background-color 0.5s;
+}
+
+
+#section2 {
+    position: relative;
+    background-color: black;
+}
+
+#video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
+.text{
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    color: #1BFFFF;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    word-spacing: 5px;
+    text-shadow: #085f5f6b 10px 10px;
+    font-size: 50px;
+}
+#video-container1 {
+    border-radius: 50px; /* Redondear bordes con un radio de 10px */
+    border: 5px solid #1BFFFF;
+    overflow: hidden; /* Ocultar cualquier contenido que sobresalga */
+    position: absolute;
+    top: 25%;
+    left: 10%;
+}
+#video-container2 {
+    border-radius: 50px; /* Redondear bordes con un radio de 10px */
+    border: 5px solid #1BFFFF;
+    overflow: hidden; /* Ocultar cualquier contenido que sobresalga */
+    position: absolute;
+    top: 25%;
+    left: 67%;
+}
+
+/* Dos huecos para poner dos videos mas mas adelante ;) */
+
+#video-container3 {
+    border-radius: 50px; /* Redondear bordes con un radio de 10px */
+    border: 5px solid #1BFFFF;
+    overflow: hidden; /* Ocultar cualquier contenido que sobresalga */
+    position: absolute;
+    top: 60%;
+    left: 10%;
+}
+#video-container4 {
+    border-radius: 50px; /* Redondear bordes con un radio de 10px */
+    border: 5px solid #1BFFFF;
+    overflow: hidden; /* Ocultar cualquier contenido que sobresalga */
+    position: absolute;
+    top: 60%;
+    left: 67%;
+}
+
+#arrowAnim {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 90%;
+    left: 25%;
+    transform: rotate(270deg);
+  }
+  
+  .arrow {
+    width: 10px;
+    height: 10px;
+    border: 5px solid;
+    border-color: #1BFFFF transparent transparent #1BFFFF;
+    transform: rotate(-45deg);
+  }
+  
+  
+  .arrowSliding {
+    position: absolute;
+    -webkit-animation: slide 4s linear infinite; 
+            animation: slide 4s linear infinite;
+  }
+  
+  .delay1 {
+    -webkit-animation-delay: 1s; 
+      animation-delay: 1s;
+  }
+  .delay2 {
+    -webkit-animation-delay: 2s; 
+      animation-delay: 2s;
+  }
+  .delay3 {
+    -webkit-animation-delay: 3s; 
+      animation-delay: 3s;
+  }
+  
+  @-webkit-keyframes slide {
+      0% { opacity:0; transform: translateX(15vw); }	
+     20% { opacity:1; transform: translateX(9vw); }	
+     80% { opacity:1; transform: translateX(-9vw); }	
+    100% { opacity:0; transform: translateX(-15vw); }	
+  }
+  @keyframes slide {
+      0% { opacity:0; transform: translateX(15vw); }	
+     20% { opacity:1; transform: translateX(9vw); }	
+     80% { opacity:1; transform: translateX(-9vw); }	
+    100% { opacity:0; transform: translateX(-15vw); }	
+  }
+
+
+  #discord{
+    position: absolute;
+    text-decoration: underline;
+    top: 80%;
+    left: 80%;
+  }
